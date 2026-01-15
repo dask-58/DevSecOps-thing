@@ -57,10 +57,10 @@ def add(a: int | float, b: int | float) -> float:
     """
     Subtract two numbers and return the result.
     Args:
-        a (int | float): Minuend
-        b (int | float): Subtrahend
+        a (int | float): One number
+        b (int | float): Another number to add
     Returns:
-        float: Result of subtraction
+        float: Result of addition
     """
     if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
         raise TypeError("a and b must be numbers.")
