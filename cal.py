@@ -6,6 +6,12 @@ def div(a: int | float, b: int | float) -> float:
         b (int | float): Denominator
     Returns:
         float: Result of division
+    Raises:
+        TypeError: If a or b is not a number
+        ZeroDivisionError: If b is zero
+
+    Author:
+        Dhruv Koli <googldhruv@gmail.com>
     """
     if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
         raise TypeError("a and b must be numbers.")
